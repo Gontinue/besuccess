@@ -2,18 +2,36 @@
   "private": true,
   "author": "lgy <1412215226@qq.com>",
   "scripts": {
-    "dev": "umi dev",
+    "dev": "npm run lint && umi dev",
     "build": "umi build",
     "postinstall": "umi setup",
     "setup": "umi setup",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "lint": "eslint src"
   },
   "dependencies": {
+    "eslint": "^8.0.1",
     "umi": "^4.0.88"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
-    "typescript": "^5.0.3"
-  }
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-standard-with-typescript": "^40.0.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "typescript": "*"
+  },
+  "name": "besuccess",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Gontinue/besuccess",
+  "license": "MIT"
 }

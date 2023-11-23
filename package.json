@@ -14,7 +14,7 @@
     "umi": "^4.0.88"
   },
   "gitHooks": {
-    "pre-commit": "npm run lint"
+    "pre-commit": "lint-staged && npm run lint"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
@@ -30,7 +30,8 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.33.2",
-    "typescript": "*"
+    "typescript": "*",
+    "lint-staged": "^10.0.7"
   },
   "name": "besuccess",
   "version": "1.0.0",

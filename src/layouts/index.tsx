@@ -1,12 +1,11 @@
-import { Link, Outlet } from 'umi';
-import styles from './index.less';
+import { Link, Outlet } from "umi";
+import styles from "./index.less";
 
 export default function Layout() {
-
   const testFunc = () => {
-    console.log('test');
+    console.log("test");
   };
-  
+
   return (
     <div className={styles.navs}>
       <ul>

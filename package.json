@@ -5,6 +5,8 @@
     "dev": "npm run lint && umi dev",
     "build": "umi build",
     "postinstall": "umi setup",
+    "prettier": "prettier --write src/**/*.{js,jsx,tsx,ts,less,md,json}",
+    "handlePreCommit": "npm run prettier && npm run lint",
     "setup": "umi setup",
     "start": "npm run dev",
     "lint": "eslint src"
@@ -14,12 +16,14 @@
     "umi": "^4.0.88"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged && npm run lint"
   },
   "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "npm run lint",
-      "git add"
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
     ]
   },
   "devDependencies": {
@@ -37,6 +41,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.33.2",
     "typescript": "*",
+    "prettier": "^2.2.0",
     "lint-staged": "^10.0.7"
   },
   "name": "besuccess",

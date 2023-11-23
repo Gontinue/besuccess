@@ -13,6 +13,9 @@
     "eslint": "^8.0.1",
     "umi": "^4.0.88"
   },
+  "gitHooks": {
+    "pre-commit": "npm run lint"
+  },
   "devDependencies": {
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",

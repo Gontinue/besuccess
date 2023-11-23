@@ -3,7 +3,9 @@ import styles from './index.less';
 
 export default function Layout() {
 
-
+  const testFunc = () => {
+    console.log('test');
+  };
   
   return (
     <div className={styles.navs}>

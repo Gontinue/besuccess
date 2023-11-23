@@ -1,9 +1,9 @@
-import React from "react";
-import yayJpg from "../assets/yay.jpg";
+import React from 'react';
+import yayJpg from '../assets/yay.jpg';
 
 export default function HomePage() {
   const funcTest = () => {
-    console.info("test");
+    console.info('test');
   };
 
   return (

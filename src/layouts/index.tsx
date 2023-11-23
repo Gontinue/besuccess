@@ -1,9 +1,10 @@
-import { Link, Outlet } from "umi";
-import styles from "./index.less";
+import { Link, Outlet } from 'umi';
+import React from 'react';
+import styles from './index.less';
 
 export default function Layout() {
   const testFunc = () => {
-    console.log("test");
+    console.info('test');
   };
 
   return (
